@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
+Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.
+
+# Start the project
+
 Run `npm install` and `ng serve`. Server will start at port 4200. Go to [localhost:4200](localhost:4200).
 
 Swagger Component should render swagger UI into div element `swagger-container`
