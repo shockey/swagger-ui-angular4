@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ElementRef} from '@angular/core';
 
-import {SwaggerUIBundle, SwaggerUIStandalonePreset} from 'swagger-ui-dist';
+import SwaggerUI, {SwaggerUIStandalonePreset} from 'swagger-ui';
 
 @Component({
   selector: 'app-swagger',
@@ -13,18 +13,13 @@ export class SwaggerComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const ui = SwaggerUIBundle({
+    const ui = SwaggerUI({
       url: 'http://petstore.swagger.io/v2/swagger.json',
       domNode: this.el.nativeElement.querySelector('.swagger-container'),
       deepLinking: true,
       presets: [
-        SwaggerUIBundle.presets.apis,
-        SwaggerUIStandalonePreset
+        SwaggerUI.presets.apis
       ],
-      plugins: [
-        SwaggerUIBundle.plugins.DownloadUrl
-      ],
-      layout: 'StandaloneLayout'
     });
   }
 
