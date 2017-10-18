@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ElementRef} from '@angular/core';
 
-import SwaggerUI, {SwaggerUIStandalonePreset} from 'swagger-ui';
+import SwaggerUI from 'swagger-ui';
 
 @Component({
   selector: 'app-swagger',
